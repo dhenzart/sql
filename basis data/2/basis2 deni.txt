@@ -1,0 +1,66 @@
+                 
+
+                 SELAMAT DATANG DI CHANNEL dhenzID-NET
+
+SQL dasar tentang perintah INSERT,
+UPDATE, DELETE dan SELECT.
+
+ 
+struktur table:
+
+
+NIM, Nama, Alamat_jalan, Kota, Kode_Pos, Jenis_Kelamin, No_Hp, Tanggal_Lahir, 
+Kode_Dosen.
+
+
+import data table:
+
+ \. patch_to_file\file_name.sql
+
+
+
+update tanggal lahir semplon menjadi 30 maret 1998:
+
+UPDATE nama_table SET field_yang_diupdate=value WHERE kondisi;
+
+
+kemudian kita tampilkan hanya yang kita update saja .
+
+select  from table where kondisi;
+
+
+hapus value:
+perintahnya :
+DELETE FROM nama_tabel WHERE kondisi;
+
+
+
+
+menampilkan beberapa field dalam satu tabel:
+
+SELECT field1, ..., fieldn FROM nama_tabel;
+
+
+menampilkan suka suka:
+
+SELECT * FROM nama_tabel WHERE field1=values and field2=values;
+
+
+
+Atau kita ingin menanmpilkan data Mahasiswa yang berasal dari kota tertentu
+dengan kelamin laki-laki atau Mahasiswa yang berumur kurang dan lebih dari 22 tahun 
+dengan kelamin wanita. dengan perintah yang sama seperti yang diatas
+
+
+
+
+
+
+
+                 Mungkin dari saya hanya segitu kurang lebih nya mohon maaf 
+                              jangan lupa subscribe dan juga like
+
+                                              TERIMA KASIH
+
+
+

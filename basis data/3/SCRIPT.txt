@@ -1,0 +1,98 @@
+
+
+
+
+
+langsung saja
+
+
+
+
+sebelumnya saya sudah membuat database dengan nama bima dan membuat 2 table
+
+CEK TABLE YANG ADA DENGAN PERINTAH : SHOW TABLES;
+
+CEK ISI DATA DENGAN MENGETIKAN 
+select * from nama tabel.
+
+
+
+
+
+
+selanjutnya kita Tampilkan pegawai yang gajinya bukan 2.000.000 dan 1.250.000 ! :
+
+gunakan perintah ::select * from pegawai where gaji<>'2000000 and gajio<>'1250000';
+
+
+lalu kita Tampilkan pegawai yang tunjangannya NULL! 
+
+gunakan perintah select * from pegawai where tunjangan='null';
+
+lalu Tampilkan pegawai yang tunjangannya tidak NULL! 
+gunakan perintah select * from pegawai where tunjangan <>'null';
+
+lalu Tampilkan/hitung jumlah baris/record tabel pegawai!
+gunakan perintah select count(idpegawai)from pegawai;
+
+
+lalu Tampilkan/hitung jumlah total gaji di tabel pegawai!
+select sum(gaji) as jumlah from pegawai;
+
+
+
+
+
+lalu Tampilkan/hitung rata-rata gaji pegawai!
+
+select avg(gaji)as rerata from pegawai;
+
+lalu Tampilkan gaji terkecil!
+select min(gaji)as terkecil from pegawai;
+
+
+
+lalu Tampilkan gaji terbesar!NO
+select max(gaji) as terbesar from pegawai;
+
+
+
+
+
+
+
+
+
+
+lalu Tampilkan jumlah hewan yang dimiliki setiap owner.
+
+select owner,count(name) as jumlah from pet group by owner;
+
+
+lalu Tampilkan jumlah hewan berdasarkan spesies
+select species,count (name) as jumlah from pet group by species;
+
+
+
+
+
+lalu Tampilkan jumlah hewan berdasarkan jenis kelamin
+select sex,count (name)as jumlah from pet group by sex;
+
+
+
+
+lalu Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin
+
+select species,sex,count(name) as jumlah from pet group by species,sex;
+
+
+
+
+lalu Tampilkan  jumlah  hewan  berdasarkan  spesis  (cat  dan  dog  saja)  dan  jenis kelamin
+
+SELECT species='cat', species='dog', sex, COUNT(name) AS jumlah FROM pet GROUP BY species='cat', species='dog', sex;
+
+
+
+
